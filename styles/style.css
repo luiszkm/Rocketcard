@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +14,21 @@
   --main-color: rgb(0, 0, 0);
   --secondary-color: #0E1218;
 }
-#app{
+
+#app {
   background-color: var(--secondary-color);
   position: relative;
   top: 0;
   z-index: 10;
   width: 100%;
   min-height: 100vh;
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
+
 .main-card {
   margin: 0 auto;
   width: 100%;
@@ -28,7 +37,35 @@
   border-radius: 5rem;
   padding: 2.5rem 1.5em;
   background-color: var(--main-color);
-  z-index: 2;
+  z-index: 3;
+  display: flex;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+header h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
 }
 
 .card {
@@ -46,7 +83,6 @@
   position: relative;
   width: 100%;
   height: 40rem;
- 
   display: flex;
   align-items: center;
 }
@@ -61,22 +97,65 @@
   background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
   border-radius: 50px;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.info ul div{
+
+.info ul div {
   display: flex;
   align-items: center;
   gap: 1rem;
   gap: 1.6rem;
-  color: wheat;
+  color: white;
 
 }
+
+.info ul div li {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 .avatar {
   width: 37rem;
   height: 37rem;
   border-radius: 50%;
-  z-index: 0;
+  z-index: 1;
   position: relative;
   right: -12rem;
-  background: url(22185823.png);
   border: 10px solid #8257E5;
+}
+.avatar img{
+  width: 37rem;
+  height: 37rem;
+  border-radius: 50%;
+  
+}
+footer {
+  position: absolute;
+  bottom: 4rem;
+  right: 3rem;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.color h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+}
+
+.color #buttonColor {
+  width: 23rem;
+  height: 6rem;
+  color: white;
+  background: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 1.5rem;
+  cursor: pointer;
 }
