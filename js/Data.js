@@ -14,7 +14,7 @@ export function Data() {
 
 
   async function load() {
-    const user = await GithubUser.search('luiszkm')
+    const user = await GithubUser.search('')
     document.querySelector('header h1').innerHTML = `${user.login}`
     infoUser[0].innerHTML = `${user.followers} Seguidores`
     infoUser[1].innerHTML = `${user.following} Seguindo`

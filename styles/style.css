@@ -92,7 +92,7 @@ header h1 {
   width: 195.5px;
   height: 194.7px;
   left: 0;
-  top: 15rem;
+  top: 22rem;
   z-index: 2;
   background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
   border-radius: 50px;
@@ -117,19 +117,13 @@ header h1 {
 }
 
 .avatar {
-  width: 37rem;
-  height: 37rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   z-index: 1;
   position: relative;
-  right: -12rem;
+  right: -10rem;
   border: 10px solid #8257E5;
-}
-.avatar img{
-  width: 37rem;
-  height: 37rem;
-  border-radius: 50%;
-  
 }
 footer {
   position: absolute;
