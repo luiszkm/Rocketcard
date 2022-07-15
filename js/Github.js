@@ -6,14 +6,19 @@ export class GithubUser {
       .then(data => data.json())
       .then((
         { login,
-          name,
+          followers,
+          following,
           public_repos,
-          followers }) =>
+          company,
+          location
+        }) =>
       ({
         login,
-        name,
-        public_repos,
         followers,
+        following,
+        public_repos,
+        company,
+        location
       }))
   }
 }
