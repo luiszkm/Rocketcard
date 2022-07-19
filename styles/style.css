@@ -47,7 +47,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem;
-  
+
   gap: 3rem;
 }
 
@@ -87,7 +87,7 @@ header h1 {
   align-items: center;
   flex-direction: column-reverse;
   gap: 3rem;
-  
+
 }
 
 .info {
@@ -117,16 +117,32 @@ header h1 {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+.avatar-content{
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  float: left;
+  width: 30rem;
+  height: 30rem;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 65%);
+  background-color: #8257E5;
+  object-fit: cover;
 
-.avatar {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  z-index: 1;
-  position: relative;
-  /*right: -10rem;*/
-  border: 10px solid #8257E5;
 }
+.avatar {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  float: left;
+  width: 28rem;
+  height: 28rem;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 65%);
+
+  
+}
+
 footer {
   position: absolute;
   bottom: 4rem;
